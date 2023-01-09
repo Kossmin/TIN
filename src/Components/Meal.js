@@ -4,7 +4,7 @@ import MealItem from "./MealItem";
 import RecipeIndex from "./RecipeIndex";
 const Meal = () => {
   const [url, setUrl] = useState(
-    "https:/www.themealdb.com/api/json/v1/1/search.php?f=d"
+    "https://www.themealdb.com/api/json/v1/1/search.php?f=d"
   );
   const [item, setItem] = useState();
   const [show, setShow] = useState(false);
@@ -24,12 +24,12 @@ const Meal = () => {
   }, [url]);
 
   const setIndex = (alpha) => {
-    setUrl(`https:/www.themealdb.com/api/json/v1/1/search.php?f=${alpha}`);
+    setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?f=${alpha}`);
   };
 
   const indexSearch = (KB) => {
     if (KB.key === "Enter")
-      setUrl(`https:/www.themealdb.com/api/json/v1/1/search.php?s=${search}`);
+      setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`);
   };
   return (
     <div className={classes.main}>
